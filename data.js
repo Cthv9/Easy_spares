@@ -1,6 +1,6 @@
 /*
-  Configuratore Kit Ricambi Kohler Sea Spares - SOLO DIESEL
-  Fonte: PDF Kohler SEA SPARES KIT G12-202, 11/20.
+  Configuratore Kit Ricambi Sea Spares - SOLO DIESEL
+  Fonte: PDF SEA SPARES KIT G12-202, 11/20.
   Nota: i modelli benzina e i kit GM48014, GM77091, GM12310 sono stati esclusi.
 */
 
