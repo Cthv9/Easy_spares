@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Configuratore Kit Ricambi – Generatori Diesel</title>
+  <meta name="theme-color" content="#145da0" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="container">
+    <section class="hero">
+      <div>
+        <p class="eyebrow">Kohler Sea Spares</p>
+        <h1>Configuratore Kit Ricambi Generatori Diesel</h1>
+        <p class="subtitle">Seleziona il modello generatore: il configuratore individua il kit corretto e mostra la distinta articoli.</p>
+        <button id="installBtn" class="install hidden" type="button">Installa app</button>
+      </div>
+    </section>
+
+    <section class="card selector-card">
+      <label for="modelSearch">Cerca modello</label>
+      <input id="modelSearch" type="search" placeholder="Es. 9EKOZD, 55EFOZDJ..." autocomplete="off" />
+
+      <label for="modelSelect">Modello generatore diesel</label>
+      <select id="modelSelect">
+        <option value="">-- seleziona modello --</option>
+      </select>
+    </section>
+
+    <section id="result" class="card hidden">
+      <div class="result-header">
+        <div>
+          <p class="eyebrow">Risultato</p>
+          <h2 id="kitTitle"></h2>
+          <p id="itemCount" class="muted"></p>
+        </div>
+        <button id="copyBtn" type="button">Copia tabella</button>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Codice articolo</th>
+              <th>Descrizione PDF</th>
+              <th>Quantità</th>
+            </tr>
+          </thead>
+          <tbody id="kitTableBody"></tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
